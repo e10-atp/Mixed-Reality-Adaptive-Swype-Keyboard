@@ -18,7 +18,7 @@ public class AutoGrab : MonoBehaviour
     public void Grab()
     {
         interactionManager.ForceSelect(rayInteractor, grabInteractable);
-        Debug.Log("AutoGrab");
+        //Debug.Log("AutoGrab");
     }
 
     private void Awake()

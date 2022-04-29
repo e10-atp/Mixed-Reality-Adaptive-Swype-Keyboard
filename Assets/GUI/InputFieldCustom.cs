@@ -65,46 +65,49 @@ public class InputFieldCustom : MonoBehaviour
     {
 
         //string text = _text.text;
-        string text = _inputfield.text;
 
         if (keyPress == "\b")
         {
             // Backspace
             /*if (text.LastIndexOf(' ') > 0) 
             {
-                tex = text.Remove(text.LastIndexOf(' ')).TrimEnd();
+                text = text.Remove(text.LastIndexOf(' ')).TrimEnd();
             }*/
-            text = "";
+            //_outputtext.text = _outputtext.text.Remove(_outputtext.text.LastIndexOf(' ')).TrimEnd();
+            //_inputfield.text += " ";
         }
         if (keyPress == " ")
         {
             // space
-            if (text.Length > 0)
-                getSuggestion();
-            text = "";
+            getSuggestion();
         }
         if (keyPress == "/s")
         {
             WriteString(_outputtext.text);
-            text = "";
+            WriteString(Timer.time.ToString("0.000"));
+            Timer.resetbutton();
+            Timer.startbutton();
             _outputtext.text = "";
         }
         else
         {
             // Regular key press
-            text += keyPress;
+            _inputfield.text += keyPress;
         }
 
         //_text.text = text;
-        _inputfield.text = text;
     }
 
     private void getSuggestion()
     {
-        var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
-        // Debug.Log(s);
-        // Debug.Log(s.ElementAt(0));
-        _outputtext.text += s.ElementAt(0) + " ";
+        Debug.Log(_inputfield.text);
+        string word = _inputfield.text.Split(' ').Last();
+        var s = simpleSwipeType.GetSuggestion(word, 1);
+        Debug.Log(s);
+        if(s.Any()){
+            Debug.Log(s.First());
+            _outputtext.text += s.ElementAt(0) + " ";
+        }
     }
 
     private void WriteString(string s)
