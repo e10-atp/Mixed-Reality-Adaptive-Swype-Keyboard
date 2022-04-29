@@ -22,6 +22,7 @@ public class InputFieldCustom : MonoBehaviour
     [SerializeField] private TextAsset _dictionary;
     public Keyboard keyboard { get { return _keyboard; } set { SetKeyboard(value); } }
 
+    private SwipeType.SwipeType simpleSwipeType;
 
     void Awake()
     {
@@ -69,8 +70,24 @@ public class InputFieldCustom : MonoBehaviour
         if (keyPress == "\b")
         {
             // Backspace
+            /*if (text.LastIndexOf(' ') > 0) 
+            {
+                tex = text.Remove(text.LastIndexOf(' ')).TrimEnd();
+            }*/
+            text = "";
+        }
+        if (keyPress == " ")
+        {
+            // space
             if (text.Length > 0)
-                text = text.Remove(text.Length - 1);
+                getSuggestion();
+            text = "";
+        }
+        if (keyPress == "/s")
+        {
+            WriteString(_outputtext.text);
+            text = "";
+            _outputtext.text = "";
         }
         else
         {
@@ -87,10 +104,18 @@ public class InputFieldCustom : MonoBehaviour
         var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
         // Debug.Log(s);
         // Debug.Log(s.ElementAt(0));
-        _outputtext.text = s.ElementAt(0);
+        _outputtext.text += s.ElementAt(0) + " ";
+    }
+
+    private void WriteString(string s)
+    {
+        string path = Application.persistentDataPath + "/result.txt";
+        StreamWriter writer = new StreamWriter(path, true);
+        writer.WriteLine(s);
+        writer.Close();
     }
     // Start is called before the first frame update
-    private SwipeType.SwipeType simpleSwipeType;
+    
 
     void Start()
     {
@@ -98,10 +123,9 @@ public class InputFieldCustom : MonoBehaviour
         Debug.Log("Hello world!");
         var wordList = _dictionary.text.Split();
         simpleSwipeType = new MatchSwipeType(wordList);
-        _inputfield.text = "yuioiu";
+        _inputfield.text = "";
         // _outputtext.text = _inputfield.text;
-        
-        
+       
 
     }
 

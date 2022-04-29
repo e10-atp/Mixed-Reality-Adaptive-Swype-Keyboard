@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1WMHH86DAD1356",
+    "m_SelectedDeviceId": "1WMHH86BL91356",
     "m_SelectedPackage": {
-        "deviceId": "1WMHH86DAD1356",
+        "deviceId": "1WMHH86BL91356",
         "name": "com.DefaultCompany.MalletlKeyboard",
-        "processId": 26955,
+        "processId": 31526,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,30 @@
             "deviceId": "1WMHH86DAD1356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 26955,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 29492,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 30240,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 30912,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 31526,
             "exited": false
         }
     ],
