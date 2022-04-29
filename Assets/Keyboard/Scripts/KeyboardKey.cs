@@ -44,8 +44,18 @@ namespace Normal.UI {
 
             return localMalletHeadPosition.y >= 0.0f;
         }
-
+        
         public void KeyPressed() {
+            // GameObject keyModel = this.gameObject.transform.GetChild(1).GetChild(1).gameObject;
+            // Material keyMaterial = keyModel.GetComponent<Material>();
+            // Color originalColor = keyMaterial.color;
+            // float t = 0.0f;
+            // while (t < 1.0)
+            // {
+            //     keyMaterial.color = Color.Lerp(Color.yellow, originalColor, t);
+            //     t += 0.1f;
+            // }
+            
             _position = -0.1f;
 
             if (_audioSource != null) {

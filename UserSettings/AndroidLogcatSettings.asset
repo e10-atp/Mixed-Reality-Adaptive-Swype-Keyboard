@@ -1,30 +1,18 @@
 {
-    "m_SelectedDeviceId": "1WMHH86BL91356",
+    "m_SelectedDeviceId": "1WMHH86DAD1356",
     "m_SelectedPackage": {
-        "deviceId": "1WMHH86BL91356",
-        "name": "com.DefaultCompany.MalletlKeyboard",
-        "processId": 13781,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "1WMHH86DAD1356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 18964,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH86DAD1356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 21534,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH86DAD1356",
             "name": "com.oculus.shellenv",
             "processId": 3097,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH86DAD1356",
@@ -42,132 +30,42 @@
             "deviceId": "1WMHH86DAD1356",
             "name": "com.oculus.os.clearactivity",
             "processId": 21022,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH86DAD1356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 26955,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 4404,
             "exited": true
         },
         {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.oculus.os.clearactivity",
-            "processId": 30459,
+            "deviceId": "1WMHH86DAD1356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 8227,
             "exited": false
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 5487,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 5844,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 6330,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 6784,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 7503,
+            "processId": 29492,
             "exited": false
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 8340,
+            "processId": 30240,
             "exited": false
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 8775,
+            "processId": 30912,
             "exited": false
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 9225,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 9501,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 10134,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 10430,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 10945,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 11427,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 11721,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 12243,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 12606,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 13194,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH86BL91356",
-            "name": "com.DefaultCompany.MalletlKeyboard",
-            "processId": 13781,
+            "processId": 31526,
             "exited": false
         }
     ],
@@ -179,7 +77,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "",
@@ -195,7 +93,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "CRASH",

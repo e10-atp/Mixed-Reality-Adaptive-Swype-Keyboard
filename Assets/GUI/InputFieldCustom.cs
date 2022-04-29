@@ -20,6 +20,7 @@ public class InputFieldCustom : MonoBehaviour
     private Keyboard _keyboard;
 
     [SerializeField] private TextAsset _dictionary;
+    [SerializeField] private TextAsset _targetPhrases;
     public Keyboard keyboard { get { return _keyboard; } set { SetKeyboard(value); } }
 
     private SwipeType.SwipeType simpleSwipeType;
@@ -84,9 +85,9 @@ public class InputFieldCustom : MonoBehaviour
         if (keyPress == "/s")
         {
             WriteString(_outputtext.text);
-            WriteString(Timer.time.ToString("0.000"));
-            Timer.resetbutton();
-            Timer.startbutton();
+            WriteString(Timerr.time.ToString("0.000"));
+            Timerr.resetbutton();
+            Timerr.startbutton();
             _outputtext.text = "";
         }
         else
@@ -118,14 +119,15 @@ public class InputFieldCustom : MonoBehaviour
         writer.Close();
     }
     // Start is called before the first frame update
-    
 
+    private string[] phraseList;
     void Start()
     {
         
         Debug.Log("Hello world!");
         var wordList = _dictionary.text.Split();
         simpleSwipeType = new MatchSwipeType(wordList);
+        phraseList = _targetPhrases.text.Split('\n');
         _inputfield.text = "";
         // _outputtext.text = _inputfield.text;
        
