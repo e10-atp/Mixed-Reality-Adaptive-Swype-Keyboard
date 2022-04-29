@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Normal.UI;
+using SwipeType;
 
 public class InputFieldCustom : MonoBehaviour
 {
@@ -11,6 +14,7 @@ public class InputFieldCustom : MonoBehaviour
 
     public InputField _inputfield;
 
+    public InputField _outputtext;
     [SerializeField]
     private Keyboard _keyboard;
     public Keyboard keyboard { get { return _keyboard; } set { SetKeyboard(value); } }
@@ -75,15 +79,22 @@ public class InputFieldCustom : MonoBehaviour
         _inputfield.text = text;
     }
     // Start is called before the first frame update
+
+    //private SwipeType.SwipeType simpleSwipeType;
     void Start()
     {
-        _inputfield = GetComponentInChildren<InputField>();
-        _inputfield.text = "lmao";
+        SwipeType.SwipeType simpleSwipeType = new MatchSwipeType(File.ReadAllLines("EnglishDictionary.txt"));
+        //_inputfield = GetComponentInChildren<InputField>();
+        _inputfield.text = "yuioiu";
+        //_outputtext = GetComponentInChildren<Outputtext>();
+        _outputtext.text = _inputfield.text;
+        // var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
+        // _outputtext.text = s.ElementAt(0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
