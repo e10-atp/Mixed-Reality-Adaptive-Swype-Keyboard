@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -80,16 +81,20 @@ public class InputFieldCustom : MonoBehaviour
     }
     // Start is called before the first frame update
 
-    //private SwipeType.SwipeType simpleSwipeType;
+    private SwipeType.SwipeType simpleSwipeType = new MatchSwipeType(File.ReadAllLines("./Assets/GUI/EnglishDictionary.txt"));
     void Start()
     {
-        SwipeType.SwipeType simpleSwipeType = new MatchSwipeType(File.ReadAllLines("EnglishDictionary.txt"));
+        Debug.Log("Hello world!");
         //_inputfield = GetComponentInChildren<InputField>();
         _inputfield.text = "yuioiu";
         //_outputtext = GetComponentInChildren<Outputtext>();
         _outputtext.text = _inputfield.text;
-        // var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
-        // _outputtext.text = s.ElementAt(0);
+        
+        var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
+        Debug.Log(s);
+        Debug.Log(s.ElementAt(0));
+        _outputtext.text = s.ElementAt(0);
+
     }
 
     // Update is called once per frame
