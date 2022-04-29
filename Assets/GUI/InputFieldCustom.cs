@@ -81,6 +81,14 @@ public class InputFieldCustom : MonoBehaviour
         //_text.text = text;
         _inputfield.text = text;
     }
+
+    private void getSuggestion()
+    {
+        var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
+        // Debug.Log(s);
+        // Debug.Log(s.ElementAt(0));
+        _outputtext.text = s.ElementAt(0);
+    }
     // Start is called before the first frame update
     private SwipeType.SwipeType simpleSwipeType;
 
@@ -100,9 +108,6 @@ public class InputFieldCustom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
-        // Debug.Log(s);
-        // Debug.Log(s.ElementAt(0));
-        _outputtext.text = s.ElementAt(0);
+        
     }
 }
