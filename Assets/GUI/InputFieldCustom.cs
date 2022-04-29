@@ -18,6 +18,8 @@ public class InputFieldCustom : MonoBehaviour
     public InputField _outputtext;
     [SerializeField]
     private Keyboard _keyboard;
+
+    [SerializeField] private TextAsset _dictionary;
     public Keyboard keyboard { get { return _keyboard; } set { SetKeyboard(value); } }
 
 
@@ -80,26 +82,27 @@ public class InputFieldCustom : MonoBehaviour
         _inputfield.text = text;
     }
     // Start is called before the first frame update
+    private SwipeType.SwipeType simpleSwipeType;
 
-    private SwipeType.SwipeType simpleSwipeType = new MatchSwipeType(File.ReadAllLines("./Assets/GUI/EnglishDictionary.txt"));
     void Start()
     {
-        Debug.Log("Hello world!");
-        //_inputfield = GetComponentInChildren<InputField>();
-        _inputfield.text = "yuioiu";
-        //_outputtext = GetComponentInChildren<Outputtext>();
-        _outputtext.text = _inputfield.text;
         
-        var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
-        Debug.Log(s);
-        Debug.Log(s.ElementAt(0));
-        _outputtext.text = s.ElementAt(0);
+        Debug.Log("Hello world!");
+        var wordList = _dictionary.text.Split();
+        simpleSwipeType = new MatchSwipeType(wordList);
+        _inputfield.text = "yuioiu";
+        // _outputtext.text = _inputfield.text;
+        
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        var s = simpleSwipeType.GetSuggestion(_inputfield.text, 1);
+        // Debug.Log(s);
+        // Debug.Log(s.ElementAt(0));
+        _outputtext.text = s.ElementAt(0);
     }
 }
