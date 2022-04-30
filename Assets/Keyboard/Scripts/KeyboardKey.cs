@@ -1,51 +1,57 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Normal.UI {
+namespace Normal.UI
+{
     [ExecuteInEditMode]
-    public class KeyboardKey : MonoBehaviour {
+    public class KeyboardKey : MonoBehaviour
+    {
         public string character = "a";
-        
+
         // These are overrides in case you need something different.
-        public string displayCharacter      = null;
-        public string shiftCharacter        = null;
+        public string displayCharacter = null;
+        public string shiftCharacter = null;
         public string shiftDisplayCharacter = null;
 
         private bool _shift = false;
-        public  bool  shift { get { return _shift; } set { SetShift(value); } }
 
-        [SerializeField]
-        private Text _text;
+        public bool shift
+        {
+            get { return _shift; }
+            set { SetShift(value); }
+        }
 
-        [SerializeField]
-        private Transform _geometry;
-        private float     _position       = 0.0f;
-        private float     _targetPosition = 0.0f;
+        [SerializeField] private Text _text;
 
-        [SerializeField]
-        private AudioSource _audioSource;
+        [SerializeField] private Transform _geometry;
+        private float _position = 0.0f;
+        private float _targetPosition = 0.0f;
+
+        [SerializeField] private AudioSource _audioSource;
 
         // Internal
-        [HideInInspector]
-        public Keyboard _keyboard;
+        [HideInInspector] public Keyboard _keyboard;
 
-        void Awake() {
+        void Awake()
+        {
             // Configure the rigidbody
             Rigidbody rigidbody = GetComponent<Rigidbody>();
-            rigidbody.useGravity  = false;
+            rigidbody.useGravity = false;
             rigidbody.isKinematic = true;
             rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 
             RefreshDisplayCharacter();
         }
 
-        public bool IsMalletHeadInFrontOfKey(KeyboardMallet mallet) {
+        public bool IsMalletHeadInFrontOfKey(KeyboardMallet mallet)
+        {
             Vector3 localMalletHeadPosition = transform.InverseTransformPoint(mallet.malletHeadPosition);
 
             return localMalletHeadPosition.y >= 0.0f;
         }
-        
-        public void KeyPressed() {
+
+        public void KeyPressed()
+        {
             // GameObject keyModel = this.gameObject.transform.GetChild(1).GetChild(1).gameObject;
             // Material keyMaterial = keyModel.GetComponent<Material>();
             // Color originalColor = keyMaterial.color;
@@ -55,21 +61,23 @@ namespace Normal.UI {
             //     keyMaterial.color = Color.Lerp(Color.yellow, originalColor, t);
             //     t += 0.1f;
             // }
-            
+
             _position = -0.1f;
 
-            if (_audioSource != null) {
+            if (_audioSource != null)
+            {
                 if (_audioSource.isPlaying)
                     _audioSource.Stop();
 
-                float scalePitch = 1.0f/(_keyboard.transform.lossyScale.x + 0.2f);
+                float scalePitch = 1.0f / (_keyboard.transform.lossyScale.x + 0.2f);
                 float pitchVariance = Random.Range(0.95f, 1.05f);
                 _audioSource.pitch = scalePitch * pitchVariance;
                 _audioSource.Play();
             }
         }
 
-        void SetShift(bool shift) {
+        void SetShift(bool shift)
+        {
             if (shift == _shift)
                 return;
 
@@ -79,7 +87,8 @@ namespace Normal.UI {
         }
 
         // Key animation
-        void Update() {
+        void Update()
+        {
             // Animate bounce
             _position = Mathf.Lerp(_position, _targetPosition, Time.deltaTime * 20.0f);
 
@@ -89,12 +98,14 @@ namespace Normal.UI {
             _geometry.localPosition = localPosition;
         }
 
-        public void RefreshDisplayCharacter() {
+        public void RefreshDisplayCharacter()
+        {
             _text.text = GetDisplayCharacter();
         }
 
         // Helper functions
-        string GetDisplayCharacter() {
+        string GetDisplayCharacter()
+        {
             // Start with the character
             string dc = character;
             if (dc == null)
@@ -105,7 +116,8 @@ namespace Normal.UI {
                 dc = displayCharacter;
 
             // If we're in shift mode, check our shift overrides.
-            if (_shift) {
+            if (_shift)
+            {
                 if (shiftDisplayCharacter != null && shiftDisplayCharacter != "")
                     dc = shiftDisplayCharacter;
                 else if (shiftCharacter != null && shiftCharacter != "")
@@ -117,8 +129,10 @@ namespace Normal.UI {
             return dc;
         }
 
-        public string GetCharacter() {
-            if (shift) {
+        public string GetCharacter()
+        {
+            if (shift)
+            {
                 if (shiftCharacter != null && shiftCharacter != "")
                     return shiftCharacter;
                 else

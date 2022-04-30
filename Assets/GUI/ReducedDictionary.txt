@@ -16,10 +16,13 @@ best
 blame
 break
 but
+buttons
 by
 can
 cant
+case
 chance
+changing
 character
 come
 conclusion
@@ -36,8 +39,10 @@ discovering
 divide
 do
 done
+drawing
 drop
 easy
+enter
 essential
 ever
 every
@@ -54,12 +59,14 @@ found
 free
 from
 full
+get
 getting
 gift
 give
 go
 good
 govern
+grip
 guarantees
 guided
 habit
@@ -71,9 +78,11 @@ have
 having
 he
 head
+here
 him
 himself
 his
+hold
 human
 i
 idea
@@ -86,6 +95,9 @@ it
 its
 jobs
 keep
+key
+keyboard
+keys
 knew
 knowledge
 knows
@@ -118,6 +130,7 @@ my
 myself
 nearer
 nearly
+needed
 never
 no
 not
@@ -125,6 +138,7 @@ nothing
 of
 on
 opportunity
+or
 others
 our
 out
@@ -132,6 +146,7 @@ outrun
 paint
 painted
 painter
+parameters
 particularly
 perfection
 plants
@@ -139,10 +154,14 @@ poor
 positive
 power
 preparation
+press
 principles
+punctuation
 qualities
 quality
+ready
 real
+release
 rich
 rose
 roses
@@ -150,6 +169,7 @@ says
 scare
 scientific
 seem
+select
 shade
 share
 should
@@ -164,6 +184,7 @@ standing
 start
 still
 stub
+suggestion
 takes
 talent
 test
@@ -177,8 +198,10 @@ thought
 to
 toe
 trees
+trigger
 triumph
 truly
+tutorial
 under
 unless
 valued
@@ -192,6 +215,7 @@ when
 which
 who
 will
+word
 working
 worth
 worthless

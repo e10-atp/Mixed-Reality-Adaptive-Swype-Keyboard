@@ -17,12 +17,22 @@ public class InputFieldCustom : MonoBehaviour
 
     public InputField _outputtext;
     public InputField _targettext;
-    [SerializeField]
-    private Keyboard _keyboard;
+    [SerializeField] private Keyboard _keyboard;
 
     [SerializeField] private TextAsset _dictionary;
     [SerializeField] private TextAsset _targetPhrases;
-    public Keyboard keyboard { get { return _keyboard; } set { SetKeyboard(value); } }
+
+    //[SerializeField] private GameObject keyboard;
+
+    [SerializeField] private Material keyMaterial;
+    [SerializeField] private Material textMaterial;
+    private Vector3 originalsize;
+
+    public Keyboard keyboard
+    {
+        get { return _keyboard; }
+        set { SetKeyboard(value); }
+    }
 
     private SwipeType.SwipeType simpleSwipeType;
 
@@ -62,10 +72,9 @@ public class InputFieldCustom : MonoBehaviour
 
         _keyboard = keyboard;
     }
-    
+
     void KeyPressed(Keyboard keyboard, string keyPress)
     {
-
         //string text = _text.text;
 
         if (keyPress == "\b")
@@ -78,11 +87,13 @@ public class InputFieldCustom : MonoBehaviour
             //_outputtext.text = _outputtext.text.Remove(_outputtext.text.LastIndexOf(' ')).TrimEnd();
             //_inputfield.text += " ";
         }
+
         if (keyPress == " ")
         {
             // space
             //getSuggestion();
         }
+
         if (keyPress == "/s")
         {
             WriteString(_outputtext.text);
@@ -90,10 +101,25 @@ public class InputFieldCustom : MonoBehaviour
             Timerr.resetbutton();
             Timerr.startbutton();
             _outputtext.text = "";
-            if (i < 24)
+            if (i < 27)
             {
-                i += 1;    
+                i += 1;
             }
+            else
+            {
+                if (j <= 0)
+                {
+                    i = 0;
+                    j++;
+                }
+            }
+
+            int index = j * 27 + i;
+            Debug.Log(index);
+            if (index % 9 == 0)
+            {
+                ChangeKeyboardParam(index);
+            } 
             _targettext.text = phraseList[i];
         }
         else
@@ -117,7 +143,8 @@ public class InputFieldCustom : MonoBehaviour
         string word = _inputfield.text.Split(' ').Last();
         var s = simpleSwipeType.GetSuggestion(word, 1); //change to 3?
         Debug.Log(s);
-        if(s.Any()){
+        if (s.Any())
+        {
             Debug.Log(s.First());
             _outputtext.text += s.ElementAt(0) + " ";
         }
@@ -130,28 +157,75 @@ public class InputFieldCustom : MonoBehaviour
         writer.WriteLine(s);
         writer.Close();
     }
+
+    private void ChangeKeyboardParam(int iter)
+    {
+        // if (iter == 9)
+        // {
+        //     keyboard.transform.localScale = originalsize * 1.3f;
+        // }
+        // else if (iter == 18)
+        // {
+        //     keyboard.transform.localScale = originalsize * 0.7f;
+        // }
+        if (iter == 27)
+        {
+            //keyboard.transform.localScale = originalsize;
+            Color newColor = keyMaterial.color;
+            newColor.a = 0.5f;
+            keyMaterial.color = newColor;
+            Color textColor = textMaterial.color;
+            textColor.a = 0.5f;
+            textMaterial.color = textColor;
+        }
+        else if (iter == 36)
+        {
+            Color newColor = keyMaterial.color;
+            newColor.a = 0.1f;
+            keyMaterial.color = newColor;
+            Color textColor = textMaterial.color;
+            textColor.a = 0.1f;
+            textMaterial.color = textColor;
+        }
+        else if (iter == 45)
+        {
+            Color newColor = keyMaterial.color;
+            newColor.a = 0.0f;
+            keyMaterial.color = newColor;
+            Color textColor = textMaterial.color;
+            textColor.a = 0.0f;
+            textMaterial.color = textColor;
+        }
+        // else if (iter == 54)
+        // {
+        //     //return keyboard to default
+        //     Color newColor = keyMaterial.color;
+        //     newColor.a = 1.0f;
+        //     keyMaterial.color = newColor;
+            // Color textColor = textMaterial.color;
+            // textColor.a = 1.0f;
+            // textMaterial.color = textColor;
+        // }
+    }
     // Start is called before the first frame update
 
     private string[] phraseList;
+    private int j;
     private int i;
+
     void Start()
     {
-        
         Debug.Log("Hello world!");
         var wordList = _dictionary.text.Split();
         simpleSwipeType = new MatchSwipeType(wordList);
         phraseList = _targetPhrases.text.Split('\n');
-        i = 0;
         _targettext.text = phraseList[i];
         _inputfield.text = "";
         // _outputtext.text = _inputfield.text;
-       
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
