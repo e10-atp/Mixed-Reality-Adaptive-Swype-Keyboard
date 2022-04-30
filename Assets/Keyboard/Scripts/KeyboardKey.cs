@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace Normal.UI
 {
@@ -14,6 +16,8 @@ namespace Normal.UI
         public string shiftDisplayCharacter = null;
 
         private bool _shift = false;
+        //[SerializeField] private Renderer keyModel;
+        
 
         public bool shift
         {
@@ -52,14 +56,13 @@ namespace Normal.UI
 
         public void KeyPressed()
         {
-            // GameObject keyModel = this.gameObject.transform.GetChild(1).GetChild(1).gameObject;
-            // Material keyMaterial = keyModel.GetComponent<Material>();
-            // Color originalColor = keyMaterial.color;
+            // Color unpressedColor = Color.white;
+            // Color pressedkeyColor = Color.yellow;
             // float t = 0.0f;
-            // while (t < 1.0)
+            // while (t <= 1f)
             // {
-            //     keyMaterial.color = Color.Lerp(Color.yellow, originalColor, t);
-            //     t += 0.1f;
+            //     keyModel.material.color = Color.Lerp(pressedkeyColor, unpressedColor, t);
+            //     t += Time.deltaTime / 1f;
             // }
 
             _position = -0.1f;
@@ -96,6 +99,11 @@ namespace Normal.UI
             Vector3 localPosition = _geometry.localPosition;
             localPosition.y = _position;
             _geometry.localPosition = localPosition;
+        }
+
+        private void Start()
+        {
+   
         }
 
         public void RefreshDisplayCharacter()
