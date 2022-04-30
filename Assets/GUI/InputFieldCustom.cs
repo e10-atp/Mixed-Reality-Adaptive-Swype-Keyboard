@@ -16,6 +16,7 @@ public class InputFieldCustom : MonoBehaviour
     public InputField _inputfield;
 
     public InputField _outputtext;
+    public InputField _targettext;
     [SerializeField]
     private Keyboard _keyboard;
 
@@ -61,7 +62,7 @@ public class InputFieldCustom : MonoBehaviour
 
         _keyboard = keyboard;
     }
-
+    
     void KeyPressed(Keyboard keyboard, string keyPress)
     {
 
@@ -89,6 +90,11 @@ public class InputFieldCustom : MonoBehaviour
             Timerr.resetbutton();
             Timerr.startbutton();
             _outputtext.text = "";
+            if (i < 24)
+            {
+                i += 1;    
+            }
+            _targettext.text = phraseList[i];
         }
         else
         {
@@ -121,6 +127,7 @@ public class InputFieldCustom : MonoBehaviour
     // Start is called before the first frame update
 
     private string[] phraseList;
+    private int i;
     void Start()
     {
         
@@ -128,6 +135,8 @@ public class InputFieldCustom : MonoBehaviour
         var wordList = _dictionary.text.Split();
         simpleSwipeType = new MatchSwipeType(wordList);
         phraseList = _targetPhrases.text.Split('\n');
+        i = 0;
+        _targettext.text = phraseList[i];
         _inputfield.text = "";
         // _outputtext.text = _inputfield.text;
        
