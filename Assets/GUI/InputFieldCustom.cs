@@ -81,7 +81,7 @@ public class InputFieldCustom : MonoBehaviour
         if (keyPress == " ")
         {
             // space
-            getSuggestion();
+            //getSuggestion();
         }
         if (keyPress == "/s")
         {
@@ -105,11 +105,17 @@ public class InputFieldCustom : MonoBehaviour
         //_text.text = text;
     }
 
+    public void onActionRelease()
+    {
+        getSuggestion();
+        _inputfield.text += ' ';
+    }
+
     private void getSuggestion()
     {
         Debug.Log(_inputfield.text);
         string word = _inputfield.text.Split(' ').Last();
-        var s = simpleSwipeType.GetSuggestion(word, 1);
+        var s = simpleSwipeType.GetSuggestion(word, 1); //change to 3?
         Debug.Log(s);
         if(s.Any()){
             Debug.Log(s.First());
