@@ -137,7 +137,7 @@ mets
 meets
 men
 methods
-min
+minute
 misguided
 misiles
 missiles
@@ -225,6 +225,7 @@ triger
 trigger
 triumph
 truly
+try
 tutorial
 under
 unless
