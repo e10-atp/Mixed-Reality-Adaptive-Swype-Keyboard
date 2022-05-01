@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH86DAD1356",
         "name": "com.DefaultCompany.MalletlKeyboard",
-        "processId": 7433,
+        "processId": 8874,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -117,6 +117,18 @@
             "exited": false
         },
         {
+            "deviceId": "1WMHH86DAD1356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 7753,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86DAD1356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 8874,
+            "exited": false
+        },
+        {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 29492,
@@ -149,7 +161,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "",
@@ -165,7 +177,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "CRASH",

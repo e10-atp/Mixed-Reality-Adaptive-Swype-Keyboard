@@ -160,17 +160,19 @@ public class InputFieldCustom : MonoBehaviour
 
     private void ChangeKeyboardParam(int iter)
     {
-        // if (iter == 9)
-        // {
-        //     keyboard.transform.localScale = originalsize * 1.3f;
-        // }
-        // else if (iter == 18)
-        // {
-        //     keyboard.transform.localScale = originalsize * 0.7f;
-        // }
+        if (iter == 9)
+        {
+            //keyboard.transform.position += new Vector3(0.5f, 0.5f, 0.5f)*.16f;
+            // keyboard.transform.localScale = originalsize * 1.3f;
+            keyboard.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        }
+        else if (iter == 18)
+        {
+            keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+        }
         if (iter == 27)
         {
-            //keyboard.transform.localScale = originalsize;
+            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.5f;
             keyMaterial.color = newColor;
