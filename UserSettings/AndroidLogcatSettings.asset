@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1WMHH86DAD1356",
+    "m_SelectedDeviceId": "1WMHHA675F1384",
     "m_SelectedPackage": {
-        "deviceId": "1WMHH86DAD1356",
+        "deviceId": "1WMHHA675F1384",
         "name": "com.DefaultCompany.MalletlKeyboard",
-        "processId": 8874,
+        "processId": 11247,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -150,6 +150,114 @@
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 31526,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 3076,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 4264,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 5598,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 6328,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 6591,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 6899,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 7278,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 7571,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 7851,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 8330,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 8626,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 9427,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 9736,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 10033,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 10342,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 10623,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 10922,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA675F1384",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 11247,
             "exited": false
         }
     ],

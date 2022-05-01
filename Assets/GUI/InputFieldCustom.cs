@@ -217,6 +217,7 @@ public class InputFieldCustom : MonoBehaviour
 
     void Start()
     {
+        AudioListener.volume = 0f;
         Debug.Log("Hello world!");
         var wordList = _dictionary.text.Split();
         simpleSwipeType = new MatchSwipeType(wordList);
@@ -224,6 +225,10 @@ public class InputFieldCustom : MonoBehaviour
         _targettext.text = phraseList[i];
         _inputfield.text = "";
         // _outputtext.text = _inputfield.text;
+        Color newColor = keyMaterial.color;
+        newColor.a = 1.0f;
+        keyMaterial.color = newColor;
+
     }
 
     // Update is called once per frame
