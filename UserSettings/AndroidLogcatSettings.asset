@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1WMHH86DAD1356",
+    "m_SelectedDeviceId": "1WMHH86BL91356",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "1WMHH86BL91356",
+        "name": "com.DefaultCompany.MalletlKeyboard",
+        "processId": 26729,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,24 +48,48 @@
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 29492,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 30240,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 30912,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH86BL91356",
             "name": "com.DefaultCompany.MalletlKeyboard",
             "processId": 31526,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 25435,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.oculus.os.clearactivity",
+            "processId": 18605,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 26190,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH86BL91356",
+            "name": "com.DefaultCompany.MalletlKeyboard",
+            "processId": 26729,
             "exited": false
         },
         {

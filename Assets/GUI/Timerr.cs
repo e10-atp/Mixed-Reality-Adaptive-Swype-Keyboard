@@ -11,7 +11,7 @@ public class Timerr : MonoBehaviour
         void Start()
         {
             time = 0;
-            srt = false;
+            srt = true;
         }
 
         void Update()
