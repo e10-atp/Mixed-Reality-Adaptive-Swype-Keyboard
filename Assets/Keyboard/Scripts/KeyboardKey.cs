@@ -66,18 +66,18 @@ namespace Normal.UI
             //     t += Time.deltaTime / 1f;
             // }
 
-            _position = -0.1f;
-
-            if (_audioSource != null)
-            {
-                if (_audioSource.isPlaying)
-                    _audioSource.Stop();
-
-                float scalePitch = 1.0f / (_keyboard.transform.lossyScale.x + 0.2f);
-                float pitchVariance = Random.Range(0.95f, 1.05f);
-                _audioSource.pitch = scalePitch * pitchVariance;
-                _audioSource.Play();
-            }
+            // _position = -0.1f;
+            //
+            // if (_audioSource != null)
+            // {
+            //     if (_audioSource.isPlaying)
+            //         _audioSource.Stop();
+            //
+            //     float scalePitch = 1.0f / (_keyboard.transform.lossyScale.x + 0.2f);
+            //     float pitchVariance = Random.Range(0.95f, 1.05f);
+            //     _audioSource.pitch = scalePitch * pitchVariance;
+            //     _audioSource.Play();
+            // }
         }
 
         void SetShift(bool shift)
@@ -94,12 +94,12 @@ namespace Normal.UI
         void Update()
         {
              //Animate bounce
-            _position = Mathf.Lerp(_position, _targetPosition, Time.deltaTime * 20.0f);
-
-             //Set position
-             Vector3 localPosition = _geometry.localPosition;
-             localPosition.y = _position;
-             _geometry.localPosition = localPosition;
+            // _position = Mathf.Lerp(_position, _targetPosition, Time.deltaTime * 20.0f);
+            //
+            //  //Set position
+            //  Vector3 localPosition = _geometry.localPosition;
+            //  localPosition.y = _position;
+            //  _geometry.localPosition = localPosition;
         }
 
         private void Start()

@@ -97,6 +97,7 @@ public class InputFieldCustom : MonoBehaviour
         if (keyPress == "/s")
         {
             WriteString(_outputtext.text);
+            WriteString(_inputfield.text);
             WriteString(Timerr.time.ToString("0.000"));
             Timerr.resetbutton();
             Timerr.startbutton();
