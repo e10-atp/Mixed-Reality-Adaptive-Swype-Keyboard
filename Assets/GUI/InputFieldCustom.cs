@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Normal.UI;
 using SwipeType;
+using TMPro;
 
 public class InputFieldCustom : MonoBehaviour
 {
@@ -97,12 +98,11 @@ public class InputFieldCustom : MonoBehaviour
         if (keyPress == "/s")
         {
             WriteString(_outputtext.text);
-            WriteString(_inputfield.text);
             WriteString(Timerr.time.ToString("0.000"));
             Timerr.resetbutton();
             Timerr.startbutton();
             _outputtext.text = "";
-            if (i < 27)
+            if (i < 18)
             {
                 i += 1;
             }
@@ -115,21 +115,19 @@ public class InputFieldCustom : MonoBehaviour
                 }
             }
 
-            int index = j * 27 + i;
+            int index = j * 18 + i;
             Debug.Log(index);
-            if (index % 9 == 0)
+            if (index % 6 == 0)
             {
                 ChangeKeyboardParam(index);
-            } 
+            }
+
             _targettext.text = phraseList[i];
         }
         else
         {
-            // Regular key press
             _inputfield.text += keyPress;
         }
-
-        //_text.text = text;
     }
 
     public void onActionRelease()
@@ -159,56 +157,80 @@ public class InputFieldCustom : MonoBehaviour
         writer.Close();
     }
 
+    public Material textMat1;
+    public Material textMat2;
+    public Material textMat3;
+
     private void ChangeKeyboardParam(int iter)
     {
-        if (iter == 9)
+        var letters = keyboard.transform.Find("Keys/Letters");
+        var row1 = letters.GetChild(0);
+        var row2 = letters.GetChild(1);
+        var row3 = letters.GetChild(2);
+        Debug.Log(row1);
+        Debug.Log(row2);
+        Debug.Log(row3);
+
+        if (iter == 6)
         {
             //keyboard.transform.position += new Vector3(0.5f, 0.5f, 0.5f)*.16f;
             // keyboard.transform.localScale = originalsize * 1.3f;
             keyboard.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         }
-        else if (iter == 18)
+        else if (iter == 12)
         {
             keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
         }
-        if (iter == 27)
+
+        if (iter == 18)
         {
             keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.5f;
             keyMaterial.color = newColor;
-            Color textColor = textMaterial.color;
-            textColor.a = 0.5f;
-            textMaterial.color = textColor;
+            foreach (Transform key in letters)
+            {
+                var tmp = key.Find("Key/Text").gameObject.GetComponent<TextMeshPro>();
+                tmp.fontMaterial = textMat1;
+            }
         }
-        else if (iter == 36)
+        else if (iter == 24)
         {
             Color newColor = keyMaterial.color;
             newColor.a = 0.1f;
             keyMaterial.color = newColor;
-            Color textColor = textMaterial.color;
-            textColor.a = 0.1f;
-            textMaterial.color = textColor;
+            foreach (Transform key in letters)
+            {
+                var tmp = key.Find("Key/Text").gameObject.GetComponent<TextMeshPro>();
+                tmp.fontMaterial = textMat2;
+            }
         }
-        else if (iter == 45)
+        else if (iter == 30)
         {
             Color newColor = keyMaterial.color;
             newColor.a = 0.0f;
             keyMaterial.color = newColor;
-            Color textColor = textMaterial.color;
-            textColor.a = 0.0f;
-            textMaterial.color = textColor;
+            foreach (Transform key in letters)
+            {
+                var tmp = key.Find("Key/Text").gameObject.GetComponent<TextMeshPro>();
+                tmp.fontMaterial = textMat3;
+            }
         }
-        // else if (iter == 54)
-        // {
-        //     //return keyboard to default
-        //     Color newColor = keyMaterial.color;
-        //     newColor.a = 1.0f;
-        //     keyMaterial.color = newColor;
-            // Color textColor = textMaterial.color;
-            // textColor.a = 1.0f;
-            // textMaterial.color = textColor;
-        // }
+        else if (iter == 36)
+        {
+            //return keyboard to default
+            Color newColor = keyMaterial.color;
+            newColor.a = 1.0f;
+            keyMaterial.color = newColor;
+            Color textColor = textMaterial.color;
+            textColor.a = 1.0f;
+            textMaterial.color = textColor;
+            foreach (Transform key in letters)
+            {
+                var tmp = key.Find("Key/Text").gameObject.GetComponent<TextMeshPro>();
+                tmp.fontMaterial = textMaterial;
+            }
+        }
     }
     // Start is called before the first frame update
 
@@ -229,7 +251,6 @@ public class InputFieldCustom : MonoBehaviour
         Color newColor = keyMaterial.color;
         newColor.a = 1.0f;
         keyMaterial.color = newColor;
-
     }
 
     // Update is called once per frame
