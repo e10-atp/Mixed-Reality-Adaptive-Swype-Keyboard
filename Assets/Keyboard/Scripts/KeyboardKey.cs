@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -25,7 +26,7 @@ namespace Normal.UI
             set { SetShift(value); }
         }
 
-        [SerializeField] private Text _text;
+        [SerializeField] private TextMeshPro _text;
 
         [SerializeField] private Transform _geometry;
         private float _position = 0.0f;
@@ -92,13 +93,13 @@ namespace Normal.UI
         // Key animation
         void Update()
         {
-            // Animate bounce
+             //Animate bounce
             _position = Mathf.Lerp(_position, _targetPosition, Time.deltaTime * 20.0f);
 
-            // Set position
-            Vector3 localPosition = _geometry.localPosition;
-            localPosition.y = _position;
-            _geometry.localPosition = localPosition;
+             //Set position
+             Vector3 localPosition = _geometry.localPosition;
+             localPosition.y = _position;
+             _geometry.localPosition = localPosition;
         }
 
         private void Start()
