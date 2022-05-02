@@ -117,10 +117,7 @@ public class InputFieldCustom : MonoBehaviour
 
             int index = j * 18 + i;
             Debug.Log(index);
-            if (index % 6 == 0)
-            {
-                ChangeKeyboardParam(index);
-            }
+            ChangeKeyboardParam(index);
 
             _targettext.text = phraseList[i];
         }
@@ -164,25 +161,17 @@ public class InputFieldCustom : MonoBehaviour
     private void ChangeKeyboardParam(int iter)
     {
         var letters = keyboard.transform.Find("Keys/Letters");
-        var row1 = letters.GetChild(0);
-        var row2 = letters.GetChild(1);
-        var row3 = letters.GetChild(2);
-        Debug.Log(row1);
-        Debug.Log(row2);
-        Debug.Log(row3);
 
-        if (iter == 6)
+        if (iter is >= 6 and < 12)
         {
-            //keyboard.transform.position += new Vector3(0.5f, 0.5f, 0.5f)*.16f;
-            // keyboard.transform.localScale = originalsize * 1.3f;
             keyboard.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         }
-        else if (iter == 12)
+        else if (iter is >= 12 and < 18)
         {
             keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
         }
 
-        if (iter == 18)
+        if (iter is >= 18 and < 24)
         {
             keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             Color newColor = keyMaterial.color;
@@ -194,8 +183,9 @@ public class InputFieldCustom : MonoBehaviour
                 tmp.fontMaterial = textMat1;
             }
         }
-        else if (iter == 24)
+        else if (iter is >= 24 and < 30)
         {
+            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.1f;
             keyMaterial.color = newColor;
@@ -205,8 +195,9 @@ public class InputFieldCustom : MonoBehaviour
                 tmp.fontMaterial = textMat2;
             }
         }
-        else if (iter == 30)
+        else if (iter is >= 30 and < 36)
         {
+            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.0f;
             keyMaterial.color = newColor;
@@ -219,6 +210,7 @@ public class InputFieldCustom : MonoBehaviour
         else if (iter == 36)
         {
             //return keyboard to default
+            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             Color newColor = keyMaterial.color;
             newColor.a = 1.0f;
             keyMaterial.color = newColor;
@@ -230,13 +222,14 @@ public class InputFieldCustom : MonoBehaviour
                 var tmp = key.Find("Key/Text").gameObject.GetComponent<TextMeshPro>();
                 tmp.fontMaterial = textMaterial;
             }
+            WriteString(_inputfield.text);
         }
     }
     // Start is called before the first frame update
 
     private string[] phraseList;
-    private int j;
-    private int i;
+    private int j = 0;
+    private int i = 0;
 
     void Start()
     {
