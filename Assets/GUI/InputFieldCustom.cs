@@ -167,6 +167,10 @@ public class InputFieldCustom : MonoBehaviour
     private void ChangeKeyboardParam(int iter)
     {
         var letters = keyboard.transform.Find("Keys/Letters");
+        foreach (Transform key in letters)
+        {
+            key.position = key.position;
+        } //shouldn't really fix anything, but the problem might be in the individual keys or their geometries
 
         if (iter is >= 5 and < 11)
         {
