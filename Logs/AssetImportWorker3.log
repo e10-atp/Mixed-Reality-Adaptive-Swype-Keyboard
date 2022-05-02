@@ -1,0 +1,974 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.1f1 (3b70a0754835) revision 3895456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Education' Language: 'en' Physical Memory: 16293 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Ethan/workspace/MalletKeyboard
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+56010
+Successfully changed project path to: C:/Users/Ethan/workspace/MalletKeyboard
+C:/Users/Ethan/workspace/MalletKeyboard
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 111.52 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 1.61 ms.
+Initialize engine version: 2021.3.1f1 (3b70a0754835)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Ethan/workspace/MalletKeyboard/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6800 XT (ID=0x73bf)
+    Vendor:   ATI
+    VRAM:     16337 MB
+    Driver:   30.0.15021.1001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004038 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 30.44 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.488 seconds
+Domain Reload Profiling:
+	ReloadAssembly (488ms)
+		BeginReloadAssembly (55ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (342ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (85ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (191ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (47ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (31ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005351 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 31.31 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Package Manager log level set to [2]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Ethan\workspace\MalletKeyboard\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Ethan\workspace\MalletKeyboard\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Domain Reload Profiling:
+	ReloadAssembly (887ms)
+		BeginReloadAssembly (190ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (117ms)
+		EndReloadAssembly (605ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (148ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (31ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2474 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (55.7 KB). Loaded Objects now: 2931.
+Memory consumption went from 102.3 MB to 102.2 MB.
+Total: 3.351400 ms (FindLiveObjects: 0.193800 ms CreateObjectMapping: 0.057700 ms MarkObjects: 3.007400 ms  DeleteObjects: 0.091900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.31 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (21.9 KB). Loaded Objects now: 2931.
+Memory consumption went from 52.0 MB to 52.0 MB.
+Total: 2.611500 ms (FindLiveObjects: 0.170500 ms CreateObjectMapping: 0.056200 ms MarkObjects: 2.370500 ms  DeleteObjects: 0.013500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.23 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (21.9 KB). Loaded Objects now: 2931.
+Memory consumption went from 52.0 MB to 52.0 MB.
+Total: 3.464600 ms (FindLiveObjects: 0.201600 ms CreateObjectMapping: 0.122900 ms MarkObjects: 3.122600 ms  DeleteObjects: 0.016800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004479 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Ethan\workspace\MalletKeyboard\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Ethan\workspace\MalletKeyboard\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.766 seconds
+Domain Reload Profiling:
+	ReloadAssembly (766ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (585ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (151ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.95 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2432 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (24.7 KB). Loaded Objects now: 2935.
+Memory consumption went from 100.2 MB to 100.2 MB.
+Total: 2.598800 ms (FindLiveObjects: 0.153400 ms CreateObjectMapping: 0.070600 ms MarkObjects: 2.346500 ms  DeleteObjects: 0.027200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Ethan\workspace\MalletKeyboard\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Ethan\workspace\MalletKeyboard\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.719 seconds
+Domain Reload Profiling:
+	ReloadAssembly (720ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (535ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.30 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2432 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (26.7 KB). Loaded Objects now: 2939.
+Memory consumption went from 100.2 MB to 100.2 MB.
+Total: 3.287800 ms (FindLiveObjects: 0.173500 ms CreateObjectMapping: 0.092100 ms MarkObjects: 3.000700 ms  DeleteObjects: 0.020900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.87 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (22.0 KB). Loaded Objects now: 2939.
+Memory consumption went from 52.1 MB to 52.1 MB.
+Total: 4.333200 ms (FindLiveObjects: 0.245000 ms CreateObjectMapping: 0.163600 ms MarkObjects: 3.905600 ms  DeleteObjects: 0.018500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.11 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (22.0 KB). Loaded Objects now: 2939.
+Memory consumption went from 52.1 MB to 52.1 MB.
+Total: 3.256300 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.063700 ms MarkObjects: 2.998200 ms  DeleteObjects: 0.013600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.96 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (21.9 KB). Loaded Objects now: 2939.
+Memory consumption went from 52.1 MB to 52.1 MB.
+Total: 3.615900 ms (FindLiveObjects: 0.287600 ms CreateObjectMapping: 0.192600 ms MarkObjects: 3.114200 ms  DeleteObjects: 0.020900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1681546.755455 seconds.
+  path: Assets/DebugScene.unity
+  artifactKey: Guid(ab945c30b3abd7c44a4ea99a0acf0b79) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/DebugScene.unity using Guid(ab945c30b3abd7c44a4ea99a0acf0b79) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '85bfe1f2eb80cad6d490412609875756') in 0.103782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.202505 seconds.
+  path: Assets/GestureKeyboard.unity
+  artifactKey: Guid(ec72caf07fc93c64686aed696ecd9a61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/GestureKeyboard.unity using Guid(ec72caf07fc93c64686aed696ecd9a61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '401fa33e8e07f8886b23f88f6c286cff') in 0.009107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/NormalKeyboard.unity
+  artifactKey: Guid(57ccd74ecb71ae84d880138cfa3a2ae8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NormalKeyboard.unity using Guid(57ccd74ecb71ae84d880138cfa3a2ae8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a5c669ebbe7a4c14b2658732fc2b7116') in 0.006848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.462160 seconds.
+  path: Assets/GUI/InputFieldCustom.cs
+  artifactKey: Guid(27ca3511f2695534b93d42d6ee043ed8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/GUI/InputFieldCustom.cs using Guid(27ca3511f2695534b93d42d6ee043ed8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5d37cd4e229fa7d1c9eeefeac8056be9') in 0.031740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Space/Materials/Glass.mat
+  artifactKey: Guid(31fa54c076435644c8b13732a97c0c7f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Materials/Glass.mat using Guid(31fa54c076435644c8b13732a97c0c7f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '453bfa5d0a7a6107c1de63bcb2904b0c') in 0.018835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Keyboard/Sounds/k.wav
+  artifactKey: Guid(b010932bb61e90a40870a4185d3f4efe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/k.wav using Guid(b010932bb61e90a40870a4185d3f4efe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c5630c1f3e905e5c63b0ab1929163df') in 0.011186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Keyboard/Sounds/8.wav
+  artifactKey: Guid(25b568ee0e9c36d4f9b3355709dd56c4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/8.wav using Guid(25b568ee0e9c36d4f9b3355709dd56c4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5d638b4c3537b1b620cd75b4e5fb3516') in 0.007119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Keyboard/Scripts/KeyboardMallet.cs
+  artifactKey: Guid(00827efc196a528489e58a190ad028e2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Scripts/KeyboardMallet.cs using Guid(00827efc196a528489e58a190ad028e2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '84b889cd7210a4d97871debdcd3e0b51') in 0.007642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Keyboard/Sounds/7.wav
+  artifactKey: Guid(c43eab1ee107c314e820abd1f4cea9ec) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/7.wav using Guid(c43eab1ee107c314e820abd1f4cea9ec) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8db6c3e723f13db893ecb69fa751e22b') in 0.007793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+  artifactKey: Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader using Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '643fdf6649639725e14fd45c80acc566') in 0.015194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5866a9bcc182486d2e9d96da77f1864b') in 0.021860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Keyboard/Sounds/r.wav
+  artifactKey: Guid(6763f050707cf804c9e9c392cd709484) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/r.wav using Guid(6763f050707cf804c9e9c392cd709484) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7486ed66b6b9b5e8f9f7ff6ec8632466') in 0.007367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Keyboard/Scripts/KeyboardKeyMesh.cs
+  artifactKey: Guid(bcc5e96ce8ae6004e80730cf31d934b2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Scripts/KeyboardKeyMesh.cs using Guid(bcc5e96ce8ae6004e80730cf31d934b2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4624519248318f43ee6ab81d84d26ffc') in 0.006726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Keyboard/Scripts/KeyboardMalletHandle.cs
+  artifactKey: Guid(269887a4ad8f5a9498a7ad442af5259f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Scripts/KeyboardMalletHandle.cs using Guid(269887a4ad8f5a9498a7ad442af5259f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad0428584c0ace2573acd1a280d7e047') in 0.006776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c59268fbdf3cc1d7cfd3b33da7e3fc8c') in 0.010401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI/ReducedDictionary.txt
+  artifactKey: Guid(d5a11c7b7ba6cb449bee5d0bcc43a602) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/GUI/ReducedDictionary.txt using Guid(d5a11c7b7ba6cb449bee5d0bcc43a602) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '78f958abe7e97297f23941dab5a63b2d') in 0.008865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '521960347f6fd62a8eff47932591865b') in 0.007619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Keyboard/Sounds/4.wav
+  artifactKey: Guid(e970df840d8cad3489b0c8ea069e08af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/4.wav using Guid(e970df840d8cad3489b0c8ea069e08af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13bcae4e5cd887013e6f20b8d94be097') in 0.008167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Keyboard/Sounds/ka-ch.wav
+  artifactKey: Guid(ab46a36abbff33847add68413b85a1fd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/ka-ch.wav using Guid(ab46a36abbff33847add68413b85a1fd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f1c7085ec2613f2e8b387b25ee77743') in 0.006854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Keyboard/Sounds/5.wav
+  artifactKey: Guid(6ddf9e3252fe9ca40aa0f1ab6789638e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/5.wav using Guid(6ddf9e3252fe9ca40aa0f1ab6789638e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '15f9bbaa21ad495316ef34cd9b65b655') in 0.005324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Keyboard/Sounds/e.wav
+  artifactKey: Guid(b33e72016c560b24c95147599c6f1d6a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/e.wav using Guid(b33e72016c560b24c95147599c6f1d6a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1883f5ad4462df812d50a939871aeef1') in 0.008931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Keyboard/Sounds/9.wav
+  artifactKey: Guid(7f2c88d6106c22245b7d0d53c481b0ad) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/9.wav using Guid(7f2c88d6106c22245b7d0d53c481b0ad) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab6086a39cd21c34c75cd983eabef9c1') in 0.006886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Keyboard/Sounds/q.wav
+  artifactKey: Guid(6dd97ad5e78cd4846ba231030f7a83be) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/q.wav using Guid(6dd97ad5e78cd4846ba231030f7a83be) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5a06cd17e18d4f7d5b6d1158910fd8e0') in 0.006531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Keyboard/Sounds/i.wav
+  artifactKey: Guid(b2da2d2ecb05a94449d43f4534ca491e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/i.wav using Guid(b2da2d2ecb05a94449d43f4534ca491e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb365bab42242129c5bb4849600cf17d') in 0.008405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Keyboard/Sounds/z.wav
+  artifactKey: Guid(46da20c9fdc6f5142af7bff5afa05773) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/z.wav using Guid(46da20c9fdc6f5142af7bff5afa05773) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c42d93b2ff3d0a228d7416dce820fe2') in 0.006369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Space/Materials/Land1.mat
+  artifactKey: Guid(f42720dcbd9287543bbc2e3e1bd91586) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Materials/Land1.mat using Guid(f42720dcbd9287543bbc2e3e1bd91586) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd502301158a7d545cccbcb8c554aca78') in 0.007953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Keyboard/Sounds/baring.wav
+  artifactKey: Guid(7ed1ea44a7c152f4290978ab2bfc7d2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/baring.wav using Guid(7ed1ea44a7c152f4290978ab2bfc7d2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16b67bdedb515319c22c393a580447a2') in 0.010679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7b52bb3dc7093a9a4d9d5661c8c06e72') in 0.010313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '74f4985f7dcd791c4c7e89eaeff2538e') in 0.010492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Keyboard/Sounds/f.wav
+  artifactKey: Guid(64fc84f4b4a47fe4da16b4f0a14b2846) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/f.wav using Guid(64fc84f4b4a47fe4da16b4f0a14b2846) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b994a1b0635f2d4859be318c5c0280f') in 0.007355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7a60746236029fae9729c189c73e3b45') in 0.008800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Space/Materials/Yellow.mat
+  artifactKey: Guid(4255c8a570d143d4793c765bd43d7d82) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Materials/Yellow.mat using Guid(4255c8a570d143d4793c765bd43d7d82) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7a86aef632e623c02ec9a2e7e66250be') in 0.010125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Keyboard/Scripts/KeyboardKey.cs
+  artifactKey: Guid(8b3392b6523c66749966260f9f0bfe4e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Scripts/KeyboardKey.cs using Guid(8b3392b6523c66749966260f9f0bfe4e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '82e28b56bd085298e8a994d82f325b20') in 0.007329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Keyboard/Sounds/l.wav
+  artifactKey: Guid(ebb6848242bd77e4aa08d62c968bf7e5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/l.wav using Guid(ebb6848242bd77e4aa08d62c968bf7e5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8a69320863f694c3d9aebf3e52654de3') in 0.006256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Space/Keyboard Land.fbx
+  artifactKey: Guid(a00c58e05762ecd4895e734147ffbc46) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Keyboard Land.fbx using Guid(a00c58e05762ecd4895e734147ffbc46) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bceaae27b7cf40b79a07018657ec22a6') in 0.038649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Keyboard/Scripts/MoveAndScale.cs
+  artifactKey: Guid(c9d3b995b553dac46a4a50f7d5093222) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Scripts/MoveAndScale.cs using Guid(c9d3b995b553dac46a4a50f7d5093222) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7702d0fa3a3a91f4663381d0d1d55e4') in 0.007529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI/Timerr.cs
+  artifactKey: Guid(2fe99800184947c59ab825577dec9440) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/GUI/Timerr.cs using Guid(2fe99800184947c59ab825577dec9440) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f8e8f77e8416ed8ba9e415039423c382') in 0.007415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Snap Turn.preset
+  artifactKey: Guid(18697d253d848974aa7052cba872c9f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Snap Turn.preset using Guid(18697d253d848974aa7052cba872c9f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e2c5b9bffd3b5ff5d378bd7c82abce84') in 0.007962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF Material 2.mat
+  artifactKey: Guid(1e0b74d5c11137e42a7bff8e5db0e578) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF Material 2.mat using Guid(1e0b74d5c11137e42a7bff8e5db0e578) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16e9e51818c9cea217f971de0a4184a0') in 0.006696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b24d8e5eb534337af8c346789af5e441') in 0.007898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/XR/Settings/OpenXR Editor Settings.asset
+  artifactKey: Guid(bd5527cafdcbf994481ce165c9cee5b1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/XR/Settings/OpenXR Editor Settings.asset using Guid(bd5527cafdcbf994481ce165c9cee5b1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7442f1bea5e5882ce507b10a22ca9359') in 0.007024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/XR Device Simulator/XR Device Simulator.prefab
+  artifactKey: Guid(9f5a24a380916d14db9775daab4fe333) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/XR Device Simulator/XR Device Simulator.prefab using Guid(9f5a24a380916d14db9775daab4fe333) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e66bad08446789c834e9a827d3ac5c6') in 0.013050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF Material 1.mat
+  artifactKey: Guid(780e7c874cf4b584db4baca689772756) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF Material 1.mat using Guid(780e7c874cf4b584db4baca689772756) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '86013312b46c3f0c0ea4ccc6d83c4f32') in 0.007183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Third-party/Noto Sans/LICENSE.txt
+  artifactKey: Guid(4b8d86be01750044592fcf67d3543696) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Third-party/Noto Sans/LICENSE.txt using Guid(4b8d86be01750044592fcf67d3543696) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '201f4f73aac2f7492e97538f168c0594') in 0.006074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Third-party/Noto Sans/NotoSans-Bold.ttf
+  artifactKey: Guid(ca3a78ffe4d55594c87f9dd0c42367c0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Third-party/Noto Sans/NotoSans-Bold.ttf using Guid(ca3a78ffe4d55594c87f9dd0c42367c0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ffa426cacec333c2a25566076699c319') in 0.007319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Left Controller.preset
+  artifactKey: Guid(ffd8268f7307a0c48a067dad4a8fe060) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Left Controller.preset using Guid(ffd8268f7307a0c48a067dad4a8fe060) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b24a3cea1fd754f5a5f353e37c25d737') in 0.006588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF Material 3.mat
+  artifactKey: Guid(368ca5c108e18da48b7e56eae9691158) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF Material 3.mat using Guid(368ca5c108e18da48b7e56eae9691158) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec56b3dae878a9e377a4096103633cea') in 0.007009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Input Actions.inputactions
+  artifactKey: Guid(c348712bda248c246b8c49b3db54643f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Input Actions.inputactions using Guid(c348712bda248c246b8c49b3db54643f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef90511b3edd26d73131bebd87b9f738') in 0.024239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Keyboard/Sounds/t.wav
+  artifactKey: Guid(1d833171a5fbfdb44a8a335ad49972c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/t.wav using Guid(1d833171a5fbfdb44a8a335ad49972c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed339015696ac0daf89cc2edad0e8d61') in 0.006009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Keyboard/Sounds/b.wav
+  artifactKey: Guid(9a5bb16f2a664174fa9ba4b3beccf0af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/b.wav using Guid(9a5bb16f2a664174fa9ba4b3beccf0af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5ab929c7de2b18549ac674b6d043e0db') in 0.007167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Keyboard/Sounds/j.wav
+  artifactKey: Guid(e19e499d653808f4ca968d1ac2bda02d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/j.wav using Guid(e19e499d653808f4ca968d1ac2bda02d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '37ee5e2d92bbfcde81eb06875120567c') in 0.006753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '987ac7d3e65f5174057b7712681f2edb') in 0.007180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Keyboard/Sounds/1.wav
+  artifactKey: Guid(f2ae6e7540bc020488ee1a5a5b2c202c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/1.wav using Guid(f2ae6e7540bc020488ee1a5a5b2c202c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '608f60b72ce15139163d6263492cba1e') in 0.006730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Keyboard/Sounds/peep.wav
+  artifactKey: Guid(0c585843c4d6b674e91774fb9b808e87) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/peep.wav using Guid(0c585843c4d6b674e91774fb9b808e87) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1bb009234a4195aaec1bb65026b0c777') in 0.007706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Keyboard/Sounds/h.wav
+  artifactKey: Guid(2d4547c6d7e2c2341af37addf79eba39) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/h.wav using Guid(2d4547c6d7e2c2341af37addf79eba39) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4e8d5d32ecabee4e7db8935075805e0f') in 0.007019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+  artifactKey: Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt using Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16516e9bf83fc2100f6ce3e27535cc36') in 0.006685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Keyboard/Sounds/6.wav
+  artifactKey: Guid(4be4157f6c9064c428faa49d35827a3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/6.wav using Guid(4be4157f6c9064c428faa49d35827a3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e126ef1b6106248b475564d6fb1238ca') in 0.008106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '29705b913a6836f7046ed8a6195ab998') in 0.006384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Keyboard/Sounds/v.wav
+  artifactKey: Guid(307366c83b8d31e4da700e6f2954d3ed) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/v.wav using Guid(307366c83b8d31e4da700e6f2954d3ed) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dcb23c9b92b12ca3b32e52613542d62c') in 0.007822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Keyboard/Sounds/n.wav
+  artifactKey: Guid(c9f1d6e70eb2d494284ee7f2b5e958df) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/n.wav using Guid(c9f1d6e70eb2d494284ee7f2b5e958df) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce31945c6d8838c899dd4b0cbce2d58f') in 0.007049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Right Controller.preset
+  artifactKey: Guid(1421ad86ff3787b4dae70fe9e699a25f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Right Controller.preset using Guid(1421ad86ff3787b4dae70fe9e699a25f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e2fa03fe8218caeaa23dc0f9af3d545') in 0.007291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Space/Textures/SkyGradient.png
+  artifactKey: Guid(d08b01e58fa3c0c43839479899d9f28a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Textures/SkyGradient.png using Guid(d08b01e58fa3c0c43839479899d9f28a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c78a59ab49ed9454794a67503afd90c4') in 0.027164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Continuous Turn.preset
+  artifactKey: Guid(0caad3af14f9a414dbdf25ed41e5aa47) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Samples/XR Interaction Toolkit/0.10.0-preview.7/Default Input Actions/XRI Default Continuous Turn.preset using Guid(0caad3af14f9a414dbdf25ed41e5aa47) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd87848a37713a54948eadd450ad9fae4') in 0.007465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+  artifactKey: Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader using Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ca2254185ec1021863aa1fcbc4b1712e') in 0.007324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/XR/Settings/Mock HMD Build Settings.asset
+  artifactKey: Guid(a3d5f35285b8b7c45af691350be812b3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/XR/Settings/Mock HMD Build Settings.asset using Guid(a3d5f35285b8b7c45af691350be812b3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2ea8a63777f2cbbfaca9fcfde441443c') in 0.008986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Keyboard/Sounds/s.wav
+  artifactKey: Guid(e16b74c531a1b9441be01429fed78ace) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/s.wav using Guid(e16b74c531a1b9441be01429fed78ace) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c7dfdc7cc3212042d1f7f00929636cb8') in 0.006520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef092a3588190939ba0e8a07a210a3ea') in 0.006383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Space/Materials/Logo.mat
+  artifactKey: Guid(941549cdf948c4c45be6de6cead7598f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Materials/Logo.mat using Guid(941549cdf948c4c45be6de6cead7598f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ffda2c7346b04647527c9ba9b1e3cfdb') in 0.006925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '14c1a6de5aba3d33805841f914790805') in 0.006270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Space/Materials/ConeTree.mat
+  artifactKey: Guid(bf0580dc92fbbda41a55b06602ef2ed1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Materials/ConeTree.mat using Guid(bf0580dc92fbbda41a55b06602ef2ed1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '42ee4ad775ae13f7d39af2c2fa3cdb4d') in 0.006343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Space/Materials/Pyramids1.mat
+  artifactKey: Guid(6b8a24efa675b8a428d336e735e51d59) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Space/Materials/Pyramids1.mat using Guid(6b8a24efa675b8a428d336e735e51d59) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '87a94ceb707480f529e881f8556d6e30') in 0.007064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+  artifactKey: Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader using Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5e4854f8cbb17af21e48fff9c6c78740') in 0.008299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/XR/Loaders/Oculus Loader.asset
+  artifactKey: Guid(a4472174a3e36a843b6d4d3cb85b9cb3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/XR/Loaders/Oculus Loader.asset using Guid(a4472174a3e36a843b6d4d3cb85b9cb3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0379f7b35b107a8f15192d867677ddd4') in 0.007280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Keyboard/Sounds/d.wav
+  artifactKey: Guid(383878826c07e064bbf71cdb81345fcd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/d.wav using Guid(383878826c07e064bbf71cdb81345fcd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '591196e86622be31e271e44b824b9328') in 0.006230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Keyboard/Sounds/0.wav
+  artifactKey: Guid(8f705458c97dd384390ecbf12b04dd4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Keyboard/Sounds/0.wav using Guid(8f705458c97dd384390ecbf12b04dd4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '00417a75765d2612d1e58b836f62d506') in 0.005876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '45eacc16f556afc827a34e7d54a3b5ff') in 0.024550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b9a595a0b16e518785855454f80e3690') in 0.008257 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.15 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (21.9 KB). Loaded Objects now: 2940.
+Memory consumption went from 52.7 MB to 52.7 MB.
+Total: 2.633100 ms (FindLiveObjects: 0.151000 ms CreateObjectMapping: 0.054500 ms MarkObjects: 2.412400 ms  DeleteObjects: 0.014700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

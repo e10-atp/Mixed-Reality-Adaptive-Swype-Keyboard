@@ -70,13 +70,13 @@ namespace Normal.UI
             //
             // if (_audioSource != null)
             // {
-            //     if (_audioSource.isPlaying)
-            //         _audioSource.Stop();
-            //
-            //     float scalePitch = 1.0f / (_keyboard.transform.lossyScale.x + 0.2f);
-            //     float pitchVariance = Random.Range(0.95f, 1.05f);
-            //     _audioSource.pitch = scalePitch * pitchVariance;
-            //     _audioSource.Play();
+            //     // if (_audioSource.isPlaying)
+            //     //     _audioSource.Stop();
+            //     //
+            //     // float scalePitch = 1.0f / (_keyboard.transform.lossyScale.x + 0.2f);
+            //     // float pitchVariance = Random.Range(0.95f, 1.05f);
+            //     // _audioSource.pitch = scalePitch * pitchVariance;
+            //     // _audioSource.Play();
             // }
         }
 
@@ -96,10 +96,10 @@ namespace Normal.UI
              //Animate bounce
             // _position = Mathf.Lerp(_position, _targetPosition, Time.deltaTime * 20.0f);
             //
-            //  //Set position
-            //  Vector3 localPosition = _geometry.localPosition;
-            //  localPosition.y = _position;
-            //  _geometry.localPosition = localPosition;
+            //Set position
+            Vector3 localPosition = _geometry.localPosition;
+            localPosition.y = _position;
+            _geometry.localPosition = localPosition;
         }
 
         private void Start()

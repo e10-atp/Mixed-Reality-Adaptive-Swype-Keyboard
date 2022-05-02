@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: NormalKeyboard
+  companyName: G04
+  productName: 'CS 5678 (2021sp) G-02: Gesture Keyboard Performance'
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -323,6 +323,21 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: da25895028347c649a1bded9bc7f52f7, type: 2}
   - {fileID: -1609329634192177514, guid: 20e869af7879aa443b8139ed33f0376e, type: 2}
   - {fileID: 11400000, guid: a3d5f35285b8b7c45af691350be812b3, type: 2}
@@ -345,7 +360,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.MalletlKeyboard
+    Android: com.G04.CS56782021spG02GestureKeyboardPerformance
     Standalone: unity.DefaultCompany.NormalKeyboard
     iPhone: com.Company.ProductName
     tvOS: com.Company.ProductName

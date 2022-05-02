@@ -102,7 +102,7 @@ public class InputFieldCustom : MonoBehaviour
             Timerr.resetbutton();
             Timerr.startbutton();
             _outputtext.text = "";
-            if (i < 18)
+            if (i < 15)
             {
                 i += 1;
             }
@@ -115,7 +115,7 @@ public class InputFieldCustom : MonoBehaviour
                 }
             }
 
-            int index = j * 18 + i;
+            int index = j * 15 + i;
             Debug.Log(index);
             ChangeKeyboardParam(index);
 
@@ -127,9 +127,11 @@ public class InputFieldCustom : MonoBehaviour
         }
     }
 
+    public AudioSource release;
     public void onActionRelease()
     {
         getSuggestion();
+        release.Play();
         _inputfield.text += ' ';
     }
 
@@ -157,23 +159,30 @@ public class InputFieldCustom : MonoBehaviour
     public Material textMat1;
     public Material textMat2;
     public Material textMat3;
+    public GameObject Outline1;
+    public GameObject Outline2;
+    public GameObject Outline3;
+    public GameObject Outline4;
 
     private void ChangeKeyboardParam(int iter)
     {
         var letters = keyboard.transform.Find("Keys/Letters");
 
-        if (iter is >= 6 and < 12)
+        if (iter is >= 5 and < 11)
         {
-            keyboard.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+            keyboard.transform.position = originalPos;
+            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
         }
-        else if (iter is >= 12 and < 18)
+        else if (iter is >= 11 and < 16)
         {
-            keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+            keyboard.transform.position = originalPos;
+            keyboard.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
         }
 
-        if (iter is >= 18 and < 24)
+        if (iter is >= 16 and < 21)
         {
-            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            keyboard.transform.position = originalPos;
+            keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.5f;
             keyMaterial.color = newColor;
@@ -183,9 +192,10 @@ public class InputFieldCustom : MonoBehaviour
                 tmp.fontMaterial = textMat1;
             }
         }
-        else if (iter is >= 24 and < 30)
+        else if (iter is >= 21 and < 26)
         {
-            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            keyboard.transform.position = originalPos;
+            keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.1f;
             keyMaterial.color = newColor;
@@ -195,9 +205,14 @@ public class InputFieldCustom : MonoBehaviour
                 tmp.fontMaterial = textMat2;
             }
         }
-        else if (iter is >= 30 and < 36)
+        else if (iter is >= 26 and < 30)
         {
-            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            Outline1.SetActive(true);
+            Outline2.SetActive(true);
+            Outline3.SetActive(true);
+            Outline4.SetActive(true);
+            keyboard.transform.position = originalPos;
+            keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
             Color newColor = keyMaterial.color;
             newColor.a = 0.0f;
             keyMaterial.color = newColor;
@@ -207,10 +222,11 @@ public class InputFieldCustom : MonoBehaviour
                 tmp.fontMaterial = textMat3;
             }
         }
-        else if (iter == 36)
+        else if (iter == 30)
         {
             //return keyboard to default
-            keyboard.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            keyboard.transform.position = originalPos;
+            keyboard.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
             Color newColor = keyMaterial.color;
             newColor.a = 1.0f;
             keyMaterial.color = newColor;
@@ -230,10 +246,11 @@ public class InputFieldCustom : MonoBehaviour
     private string[] phraseList;
     private int j = 0;
     private int i = 0;
-
+    private Vector3 originalPos;
     void Start()
     {
-        AudioListener.volume = 0f;
+        originalPos = keyboard.transform.position;
+        //AudioListener.volume = 0f;
         Debug.Log("Hello world!");
         var wordList = _dictionary.text.Split();
         simpleSwipeType = new MatchSwipeType(wordList);
