@@ -1,10 +1,8 @@
-Cutie Keys
+CS 5678  MASK: Mixed-reality Adaptive Swype Keyboard
 ========
+Cornell Tech
+Xy Fang, Ethan Chang, Richard Pan
 
-Cutie Keys is an open source VR drum keyboard written in Unity/C#. The goal of this project is to provide a basic drum keyboard that anyone can use in their own VR project.
+![finalPhoto1](https://user-images.githubusercontent.com/42874337/167731115-a8e81b8f-f9b4-4fe2-9b2f-73f7f5b39360.gif)
 
-More info: http://www.normalvr.com/blog/an-open-source-keyboard-to-make-your-own/
 
-![](gifs/wanderer1.gif?raw=true)
-
-![](gifs/wanderer2.gif?raw=true)
